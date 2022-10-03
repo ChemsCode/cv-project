@@ -1,4 +1,5 @@
 import React from 'react';
+import EditPersonalInfo from './EditPersonalInfo';
 import RemoveEntryButton from './RemoveEntryButton';
 
 function PersonalInformationDisplay( { personalInfoStorage, setPersonalInfoStorage }) {
@@ -17,6 +18,8 @@ function PersonalInformationDisplay( { personalInfoStorage, setPersonalInfoStora
                 <RemoveEntryButton storage={personalInfoStorage} 
                 id={item.id}
                 setStorage={setPersonalInfoStorage} />
+                <EditPersonalInfo setPersonalInfoStorage={setPersonalInfoStorage}
+                id={item.id}/>
             </li>
         )})}
     </ul>

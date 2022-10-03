@@ -4,7 +4,7 @@ import PersonalInformationDisplay from './PersonalInformationDisplay';
 import PersonalInformationForm from './PersonalInformationForm';
 
 function PersonalInformation() {
-    const [personalInfo, setPersonalInfo] = useState({id: uniqid(), firstName: "", lastName: "", email: "", phoneNumber: ""});
+    const [personalInfo, setPersonalInfo] = useState({id: uniqid(), firstName: "", lastName: "", email: "", phoneNumber: "", edit: null});
     const [personalInfoStorage, setPersonalInfoStorage] =  useState([]);
 
     useEffect(() => {
