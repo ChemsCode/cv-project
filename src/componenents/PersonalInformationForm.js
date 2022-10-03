@@ -1,11 +1,6 @@
 import React, {useRef} from 'react';
-import uniqid from 'uniqid';
 
 function PersonalInformationForm({personalInfo, setPersonalInfo, personalInfoStorage, setPersonalInfoStorage}) {
-    const fname = useRef(null)
-    const lname = useRef(null)
-    const email = useRef(null)
-    const phone = useRef(null)
 
     const handleSubmit = event => {
         console.log("handle submit ran");
