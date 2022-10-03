@@ -14,8 +14,6 @@ function PersonalInformationForm({personalInfo, setPersonalInfo, personalInfoSto
         console.log(personalInfo)
 
         setPersonalInfoStorage([...personalInfoStorage, personalInfo])
-        
-        setPersonalInfo({...personalInfo, id: uniqid()})
 
         console.log(personalInfoStorage);
     }
